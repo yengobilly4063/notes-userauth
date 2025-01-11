@@ -1,0 +1,18 @@
+{
+    "apps": [
+        {
+            "name": "User Authentication",
+            "script": "user-server.js",
+            "cwd": "/opt/userauth",
+            "env": {
+                "REQUEST_LOG_FORMAT": "common",
+                "PORT": "5858",
+                "REST_LISTEN": "0.0.0.0",
+                "SEQUELIZE_CONNECT": "src/models/sequelize-mysql.yaml"
+            },
+            "env_production": {
+                "NODE_ENV": "production"
+            }
+        }
+    ]
+}
