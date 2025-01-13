@@ -1,5 +1,3 @@
-version: '3'
-
 services:
     db-userauth:
         image: 'mysql/mysql-server:8.0'
